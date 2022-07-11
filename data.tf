@@ -1,3 +1,4 @@
+#Pegando as subnets direto da VPC
 data "aws_subnet_ids" "private_subnets" {
   vpc_id = "vpc-07846064f27eb2140"
 

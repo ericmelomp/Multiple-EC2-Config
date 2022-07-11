@@ -1,3 +1,4 @@
+#Criação da instância
 resource "aws_instance" "map" {
   for_each = local.instance_settings
 
@@ -6,9 +7,4 @@ resource "aws_instance" "map" {
   key_name      = each.value.key_name
   subnet_id     = each.value.subnet_id
   tags          = local.instance_tags
-}
-
-
-locals {
-  instance_tags = "terraform-instance-${var.enviroment}"
 }

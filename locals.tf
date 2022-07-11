@@ -1,3 +1,4 @@
+#Fazendo o tratamento das váriaveis, colocando o valor nelas
 locals {
   instance_settings = {
     "instance01" = {
@@ -19,4 +20,8 @@ locals {
       subnet_id     = tolist(data.aws_subnet_ids.private_subnets.ids)[2]
     }
   }
+}
+
+locals {
+  instance_tags = "terraform-instance-${var.enviroment}"
 }
