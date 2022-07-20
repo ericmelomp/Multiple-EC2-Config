@@ -1,12 +1,12 @@
 #Minhas váriaveis
 variable "provider_region" {
   type    = string
-  default = "us-east-1"
+  default = "?"
 }
 
 variable "ami_ubuntu" {
   type    = string
-  default = "ami-052efd3df9dad4825"
+  default = "?"
 }
 
 variable "instance_type" {
@@ -15,7 +15,7 @@ variable "instance_type" {
 }
 
 variable "subnet_id" {
-  default = "subnet-0020bfe1b9639463c"
+  default = "?"
 }
 
 variable "enviroment" {
