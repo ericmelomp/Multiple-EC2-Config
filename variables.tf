@@ -1,4 +1,3 @@
-#Minhas váriaveis
 variable "provider_region" {
   type    = string
   default = "?"

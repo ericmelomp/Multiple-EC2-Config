@@ -1,4 +1,3 @@
-#Pegando as subnets direto da VPC
 data "aws_subnet_ids" "private_subnets" {
   vpc_id = "vpc-07846064f27eb2140"
 #This filter goes according to the tags (key=type; value=private) in the subnets of my vpc.

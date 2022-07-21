@@ -1,4 +1,3 @@
-#Criação da instância
 resource "aws_instance" "map" {
   for_each = local.instance_settings
 
